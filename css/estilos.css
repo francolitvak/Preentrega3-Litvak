@@ -1,33 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(200, 190, 181);
     font-family: "Nanum Gothic", sans-serif;
     font-size: 15px;
     color: black;
 }
-.logo{
+
+.logo {
     text-align: center;
     font-family: "Yeseva One", serif;
 }
-.logo img{
+.logo img {
     height: 150px;
 }
-.nombre-de-empresa{
+
+.nombre-de-empresa {
     font-size: 30px;
     color: black;
 }
-.nombre-de-empresa2{
+
+.nombre-de-empresa2 {
     font-size: 25px;
     color: rgb(168, 122, 36);
 }
-nav{
+
+nav {
     text-align: center;
 }
-.navbar{
+
+.navbar {
     background-color: rgba(241, 216, 185, 0.329);
     list-style: none;
     text-align: center;
@@ -35,12 +41,12 @@ nav{
     display: flex;
     width: 100%;
 }
-.navbar li{
+.navbar li {
     display: inline-block;
     text-align: center;
     align-items: center;
 }
-.navbar li a{
+.navbar li a {
     padding: 20px;
     color: rgb(37, 37, 97);
     text-decoration: none;
@@ -49,35 +55,39 @@ nav{
     font-size: 20px;
     align-items: center;
 }
-.navbar li a:hover{
-    color:rgba(102, 102, 102, 0.514);
+.navbar li a :hover {
+    color: rgba(102, 102, 102, 0.514);
 }
-.banner img{
+
+.banner img {
     height: 450px;
     max-width: 470px;
 }
-.bienvenida h2{
+
+.bienvenida h2 {
     font-size: 45px;
-    color:rgb(33, 33, 182);
+    color: rgb(33, 33, 182);
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.bienvenida p{
+.bienvenida p {
     text-align: center;
     line-height: 1.5;
     margin-left: 500px;
     margin-right: 500px;
     margin-bottom: 20px;
 }
-.pie-de-pagina{
+
+.pie-de-pagina {
     text-align: center;
     padding-top: 15px;
     padding-right: 10px;
     margin: auto;
     background-color: rgba(241, 216, 185, 0.329);
 }
-.paletas{
+
+.paletas {
     text-align: center;
     width: 100%;
     height: 1800px;
@@ -86,61 +96,58 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 5px;
-    grid-template-areas:
-    "p1 p2 p3"
-    "p4 p5 p6"
-    "p7 p8 p9"
-    "p10 p11 p12";
+    grid-template-areas: "p1 p2 p3" "p4 p5 p6" "p7 p8 p9" "p10 p11 p12";
 }
-.paleta1{
+.paletas .paleta1 {
     grid-area: p1;
 }
-.paleta2{
+.paletas .paleta2 {
     grid-area: p2;
 }
-.paleta3{
+.paletas .paleta3 {
     grid-area: p3;
 }
-.paleta4{
+.paletas .paleta4 {
     grid-area: p4;
 }
-.paleta5{
+.paletas .paleta5 {
     grid-area: p5;
 }
-.paleta6{
+.paletas .paleta6 {
     grid-area: p6;
 }
-.paleta7{
+.paletas .paleta7 {
     grid-area: p7;
 }
-.paleta8{
+.paletas .paleta8 {
     grid-area: p8;
 }
-.paleta9{
+.paletas .paleta9 {
     grid-area: p9;
 }
-.paleta10{
+.paletas .paleta10 {
     grid-area: p10;
 }
-.paleta11{
+.paletas .paleta11 {
     grid-area: p11;
 }
-.paleta12{
+.paletas .paleta12 {
     grid-area: p12;
 }
-.paletasTienda{
+.paletas .paletasTienda {
     height: 250px;
     border-radius: 10px;
 }
-.detalles-paletas{
+.paletas .detalles-paletas {
     padding-top: 10px;
 }
-.paletas ul{
+.paletas ul {
     padding-top: 5px;
     line-height: 1.5;
     list-style-type: none;
 }
-.compra{
+
+.compra {
     text-align: center;
     line-height: 1.5;
     padding-top: 20px;
@@ -148,27 +155,29 @@ nav{
     margin-left: 500px;
     margin-right: 500px;
 }
-.formu{
+.compra .formu {
     margin-top: 10px;
     padding-bottom: 15px;
     margin-bottom: 10px;
     border: solid black;
 }
-.nosotros h2{
+
+.nosotros h2 {
     font-size: 45px;
-    color:rgb(33, 33, 182);
+    color: rgb(33, 33, 182);
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.nosotros p{
+.nosotros p {
     text-align: center;
     line-height: 1.5;
     margin-left: 500px;
     margin-right: 500px;
     margin-bottom: 1%;
 }
-.reserva{
+
+.reserva {
     text-align: center;
     line-height: 1.5;
     padding-top: 20px;
@@ -176,20 +185,28 @@ nav{
     margin-left: 500px;
     margin-right: 500px;
 }
-.clases h2{
-    font-size: 45px;
-    color:rgb(33, 33, 182);
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+.reserva .formu {
+    margin-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border: solid black;
 }
-.clases p{
+
+.clases h2 {
+    font-size: 45px;
+    text-align: center;
+    color: rgb(33, 33, 182);
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.clases p {
     text-align: center;
     line-height: 1.5;
     margin-left: 500px;
     margin-right: 500px;
     margin-bottom: 1%;
 }
+
 .tipos-de-clases {
     display: flex;
     border-radius: 10px;
@@ -197,8 +214,30 @@ nav{
     padding-top: 20px;
     margin-bottom: 25px;
 }
-.tipos-de-clases img{
+.tipos-de-clases img {
     height: 250px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
+
+@media screen and (max-width: 768px) {
+    .bienvenida {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    }
+    .paletas {
+    height: 2500px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "p1 p2" "p3 p4" "p5 p6" "p7 p8" "p9 p10" "p11 p12";
+    }
+    .formu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 12px;
+    }
+}
+
+/*# sourceMappingURL=estilos.css.map */
