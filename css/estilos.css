@@ -1,243 +1,362 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(200, 190, 181);
-    font-family: "Nanum Gothic", sans-serif;
-    font-size: 15px;
-    color: black;
+  background-color: rgb(200, 190, 181);
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1rem;
+  color: black;
 }
 
 .logo {
-    text-align: center;
-    font-family: "Yeseva One", serif;
+  text-align: center;
+  font-family: "Yeseva One", serif;
 }
 .logo img {
-    height: 150px;
+  height: 150px;
 }
 
 .nombre-de-empresa {
-    font-size: 30px;
-    color: black;
+  font-size: 1.875rem;
+  color: black;
 }
 
 .nombre-de-empresa2 {
-    font-size: 25px;
-    color: rgb(168, 122, 36);
+  font-size: 1.56rem;
+  color: rgb(168, 122, 36);
 }
 
 nav {
-    text-align: center;
+  text-align: center;
 }
 
 .navbar {
-    background-color: rgba(241, 216, 185, 0.329);
-    list-style: none;
-    text-align: center;
-    margin: 10px;
-    display: flex;
-    width: 100%;
+  background-color: rgba(241, 216, 185, 0.329);
+  list-style: none;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  width: 100%;
 }
 .navbar li {
-    display: inline-block;
-    text-align: center;
-    align-items: center;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
 }
 .navbar li a {
-    padding: 20px;
-    color: rgb(37, 37, 97);
-    text-decoration: none;
-    text-align: center;
-    font-family: "Yeseva One", serif;
-    font-size: 20px;
-    align-items: center;
+  padding: 20px;
+  color: rgb(37, 37, 97);
+  text-decoration: none;
+  text-align: center;
+  font-family: "Yeseva One", serif;
+  font-size: 1.25rem;
+  align-items: center;
 }
 .navbar li a :hover {
-    color: rgba(102, 102, 102, 0.514);
+  color: rgba(102, 102, 102, 0.514);
 }
 
 .banner img {
-    height: 450px;
-    max-width: 470px;
+  height: 450px;
+  max-width: 470px;
 }
 
 .bienvenida h2 {
-    font-size: 45px;
-    color: rgb(33, 33, 182);
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  font-size: 3rem;
+  color: rgb(33, 33, 182);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  grid-area: tit;
 }
 .bienvenida p {
-    text-align: center;
-    line-height: 1.5;
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.5;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-bottom: 20px;
+  grid-area: par;
+  font-size: 1.5rem;
 }
 
 .pie-de-pagina {
-    text-align: center;
-    padding-top: 15px;
-    padding-right: 10px;
-    margin: auto;
-    background-color: rgba(241, 216, 185, 0.329);
+  text-align: center;
+  padding-top: 15px;
+  padding-right: 10px;
+  margin: auto;
+  background-color: rgba(241, 216, 185, 0.329);
 }
 
 .paletas {
-    text-align: center;
-    width: 100%;
-    height: 1800px;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 5px;
-    grid-template-areas: "p1 p2 p3" "p4 p5 p6" "p7 p8 p9" "p10 p11 p12";
+  text-align: center;
+  width: 100%;
+  height: 1800px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  grid-template-areas: "p1 p2 p3" "p4 p5 p6" "p7 p8 p9" "p10 p11 p12";
 }
 .paletas .paleta1 {
-    grid-area: p1;
+  grid-area: p1;
 }
 .paletas .paleta2 {
-    grid-area: p2;
+  grid-area: p2;
 }
 .paletas .paleta3 {
-    grid-area: p3;
+  grid-area: p3;
 }
 .paletas .paleta4 {
-    grid-area: p4;
+  grid-area: p4;
 }
 .paletas .paleta5 {
-    grid-area: p5;
+  grid-area: p5;
 }
 .paletas .paleta6 {
-    grid-area: p6;
+  grid-area: p6;
 }
 .paletas .paleta7 {
-    grid-area: p7;
+  grid-area: p7;
 }
 .paletas .paleta8 {
-    grid-area: p8;
+  grid-area: p8;
 }
 .paletas .paleta9 {
-    grid-area: p9;
+  grid-area: p9;
 }
 .paletas .paleta10 {
-    grid-area: p10;
+  grid-area: p10;
 }
 .paletas .paleta11 {
-    grid-area: p11;
+  grid-area: p11;
 }
 .paletas .paleta12 {
-    grid-area: p12;
+  grid-area: p12;
 }
 .paletas .paletasTienda {
-    height: 250px;
-    border-radius: 10px;
+  height: 250px;
+  border-radius: 10px;
 }
 .paletas .detalles-paletas {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 .paletas ul {
-    padding-top: 5px;
-    line-height: 1.5;
-    list-style-type: none;
+  padding-top: 5px;
+  line-height: 1.5;
+  list-style-type: none;
 }
 
 .compra {
-    text-align: center;
-    line-height: 1.5;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin-left: 500px;
-    margin-right: 500px;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
 }
 .compra .formu {
-    margin-top: 10px;
-    padding-bottom: 15px;
-    margin-bottom: 10px;
-    border: solid black;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border: solid black;
 }
 
 .nosotros h2 {
-    font-size: 45px;
-    color: rgb(33, 33, 182);
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  font-size: 3rem;
+  color: rgb(33, 33, 182);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .nosotros p {
-    text-align: center;
-    line-height: 1.5;
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-bottom: 1%;
+  text-align: center;
+  line-height: 1.5;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-bottom: 1%;
 }
 
 .reserva {
-    text-align: center;
-    line-height: 1.5;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin-left: 500px;
-    margin-right: 500px;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 .reserva .formu {
-    margin-top: 10px;
-    padding-bottom: 15px;
-    margin-bottom: 10px;
-    border: solid black;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border: solid black;
 }
 
 .clases h2 {
-    font-size: 45px;
-    text-align: center;
-    color: rgb(33, 33, 182);
-    margin-bottom: 20px;
-    margin-top: 50px;
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(33, 33, 182);
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 .clases p {
-    text-align: center;
-    line-height: 1.5;
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-bottom: 1%;
+  text-align: center;
+  line-height: 1.5;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-bottom: 1%;
 }
 
 .tipos-de-clases {
-    display: flex;
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 20px;
-    margin-bottom: 25px;
+  display: flex;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 25px;
 }
 .tipos-de-clases img {
-    height: 250px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 768px) {
-    .bienvenida {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    }
-    .paletas {
-    height: 2500px;
+  .bienvenida p {
+    text-align: left;
+    font-size: 0.875rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .paletas {
+    height: 2505px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "p1 p2" "p3 p4" "p5 p6" "p7 p8" "p9 p10" "p11 p12";
-    }
-    .formu {
+  }
+  .compra .formu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-size: 12px;
-    }
+    align-items: center;
+    font-size: 0.75rem;
+    padding: 20px;
+  }
+  .compra .formu label {
+    margin-bottom: 5px;
+  }
+  .compra .formu input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .compra .formu select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .compra .formu textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .compra .formu input[type=submit],
+  .compra .formu input[type=reset] {
+    width: 100%;
+  }
+  .nosotros p {
+    text-align: left;
+    font-size: 0.875rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.75;
+  }
+  .clases p {
+    text-align: left;
+    font-size: 0.875rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .clases .tipos-de-clases li {
+    list-style-type: none;
+  }
+  .clases .tipos-de-clases p {
+    text-align: left;
+    font-size: 0.875rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .clases .tipos-de-clases img {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .formu {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .bienvenida p {
+    text-align: left;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .paletas {
+    height: 5000px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6" "p7" "p8" "p9" "p10" "p11" "p12";
+  }
+  .compra .formu {
+    padding: 10px;
+  }
+  .compra .formu label {
+    font-size: 0.625rem;
+  }
+  .compra .formu input {
+    font-size: 0.625rem;
+  }
+  .compra .formu select {
+    font-size: 0.625rem;
+  }
+  .compra .formu textarea {
+    font-size: 0.625rem;
+  }
+  .compra .formu input[type=submit],
+  .compra .formu input[type=reset] {
+    font-size: 0.625rem;
+  }
+  .nosotros p {
+    text-align: left;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.75rem;
+  }
+  .clases p {
+    text-align: left;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .clases .tipos-de-clases li {
+    list-style-type: none;
+  }
+  .clases .tipos-de-clases p {
+    text-align: left;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .clases .tipos-de-clases img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .formu {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

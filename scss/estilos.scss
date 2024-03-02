@@ -6,7 +6,7 @@
 body{
     background-color: rgb(200, 190, 181);
     font-family: "Nanum Gothic", sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     color: black;
 }
 .logo{
@@ -17,11 +17,11 @@ body{
     }
 }
 .nombre-de-empresa{
-    font-size: 30px;
+    font-size: 1.875rem;
     color: black;
 }
 .nombre-de-empresa2{
-    font-size: 25px;
+    font-size: 1.56rem;
     color: rgb(168, 122, 36);
 }
 nav{
@@ -44,7 +44,7 @@ nav{
         text-decoration: none;
         text-align: center;
         font-family: "Yeseva One", serif;
-        font-size: 20px;
+        font-size: 1.25rem;
         align-items: center;
         & :hover{
             color:rgba(102, 102, 102, 0.514);
@@ -58,11 +58,12 @@ nav{
 }
 .bienvenida{
     h2{
-        font-size: 45px;
+        font-size: 3rem;
         color:rgb(33, 33, 182);
         text-align: center;
         margin-top: 50px;
         margin-bottom: 20px;
+        grid-area: tit;
     }
     p{
         text-align: center;
@@ -70,6 +71,8 @@ nav{
         margin-left: 500px;
         margin-right: 500px;
         margin-bottom: 20px;
+        grid-area: par;
+        font-size: 1.5rem;
     }
 }
 .pie-de-pagina{
@@ -147,8 +150,9 @@ nav{
     line-height: 1.5;
     padding-top: 20px;
     padding-bottom: 10px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
     .formu{
         margin-top: 10px;
         padding-bottom: 15px;
@@ -158,7 +162,7 @@ nav{
 }
 .nosotros{
     h2{
-        font-size: 45px;
+        font-size: 3rem;
         color:rgb(33, 33, 182);
         text-align: center;
         margin-top: 50px;
@@ -188,7 +192,7 @@ nav{
 }
 .clases{
     h2{
-        font-size: 45px;
+        font-size: 3rem;
         text-align: center;
         color:rgb(33, 33, 182);
         margin-bottom: 20px;
@@ -215,13 +219,14 @@ nav{
     }
 }
 @media screen and (max-width: 768px){
-    .bienvenida{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
+    .bienvenida p{
+        text-align: left;
+        font-size: 0.875rem;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .paletas{
-        height: 2500px;
+        height: 2505px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
@@ -232,13 +237,134 @@ nav{
         "p9 p10"
         "p11 p12";
     }
+    .compra{
+        .formu{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center; 
+            font-size: 0.75rem;
+            padding: 20px;
+            label{
+                margin-bottom: 5px;
+            }
+            input{
+                width: 100%; 
+                margin-bottom: 10px;
+            }
+            select{
+                width: 100%; 
+                margin-bottom: 10px; 
+            }
+            textarea{
+                width: 100%; 
+                margin-bottom: 10px; 
+            }
+        }
+    }       
+    .compra .formu input[type="submit"],
+    .compra .formu input[type="reset"] {
+        width: 100%; 
+    }
+    .nosotros p{
+        text-align: left;
+        font-size: 0.875rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.75;
+    }
+    .clases{
+        p{text-align: left;
+            font-size: 0.875rem;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .tipos-de-clases{
+            li{
+                list-style-type: none;
+            }
+            p{
+                text-align: left;
+                font-size: 0.875rem;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            img{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
     .formu{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        font-size: 12px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
-
-
-
+@media screen and (max-width: 420px){
+    .bienvenida p{
+        text-align: left;
+        font-size: 0.75rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .paletas {
+        height: 5000px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6" "p7" "p8" "p9" "p10" "p11" "p12";
+    }
+    .compra{
+        .formu {
+            padding: 10px;
+            label{
+                font-size: 0.625rem;
+            }
+            input{
+                font-size: 0.625rem;
+            }
+            select{
+                font-size: 0.625rem;
+            }
+            textarea{
+                font-size: 0.625rem;
+            }
+        }
+    }
+    .compra .formu input[type="submit"],
+    .compra .formu input[type="reset"] {
+        font-size: 0.625rem;
+    }
+    .nosotros p{
+        text-align: left;
+        font-size: 0.75rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 1.75rem;
+    }
+    .clases{
+        p{text-align: left;
+            font-size: 0.75rem;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .tipos-de-clases{
+            li{
+                list-style-type: none;
+            }
+            p{
+                text-align: left;
+                font-size: 0.75rem;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            img{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .formu{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
