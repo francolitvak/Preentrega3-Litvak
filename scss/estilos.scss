@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(200, 190, 181);
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+.logo{
+    text-align: center;
+    font-family: "Yeseva One", serif;
+    img{
+        height: 150px;
+    }
+}
+.nombre-de-empresa{
+    font-size: 1.875rem;
+    color: black;
+}
+.nombre-de-empresa2{
+    font-size: 1.56rem;
+    color: rgb(168, 122, 36);
+}
+nav{
+    text-align: center;
+}
+.navbar{
+    background-color: rgba(241, 216, 185, 0.329);
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    li{
+        display: inline-block;
+    text-align: center;
+    align-items: center;
+        a{
+        padding: 20px;
+        color: rgb(37, 37, 97);
+        text-decoration: none;
+        text-align: center;
+        font-family: "Yeseva One", serif;
+        font-size: 1.25rem;
+        align-items: center;
+        & :hover{
+            color:rgba(102, 102, 102, 0.514);
+        }
+        }
+    }
+}
+.banner img{
+    height: 450px;
+    max-width: 470px;
+}
+.bienvenida{
+    h2{
+        font-size: 3rem;
+        color:rgb(33, 33, 182);
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        grid-area: tit;
+    }
+    p{
+        text-align: center;
+        line-height: 1.5;
+        margin-left: 500px;
+        margin-right: 500px;
+        margin-bottom: 20px;
+        grid-area: par;
+        font-size: 1.5rem;
+    }
+}
+.pie-de-pagina{
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 10px;
+    margin: auto;
+    background-color: rgba(241, 216, 185, 0.329);
+}
+.paletas{
+    text-align: center;
+    width: 100%;
+    height: 1800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    grid-template-areas:
+    "p1 p2 p3"
+    "p4 p5 p6"
+    "p7 p8 p9"
+    "p10 p11 p12";
+    .paleta1{
+        grid-area: p1;
+    }
+    .paleta2{
+        grid-area: p2;
+    }
+    .paleta3{
+        grid-area: p3;
+    }
+    .paleta4{
+        grid-area: p4;
+    }
+    .paleta5{
+        grid-area: p5;
+    }
+    .paleta6{
+        grid-area: p6;
+    }
+    .paleta7{
+        grid-area: p7;
+    }
+    .paleta8{
+        grid-area: p8;
+    }
+    .paleta9{
+        grid-area: p9;
+    }
+    .paleta10{
+        grid-area: p10;
+    }
+    .paleta11{
+        grid-area: p11;
+    }
+    .paleta12{
+        grid-area: p12;
+    }
+    .paletasTienda{
+        height: 250px;
+        border-radius: 10px;
+    }
+    .detalles-paletas{
+        padding-top: 10px;
+    }
+    ul{
+        padding-top: 5px;
+        line-height: 1.5;
+        list-style-type: none;
+    }
+}
+.compra{
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    .formu{
+        margin-top: 10px;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        border: solid black;
+    }
+}
+.nosotros{
+    h2{
+        font-size: 3rem;
+        color:rgb(33, 33, 182);
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    p{
+        text-align: center;
+        line-height: 1.5;
+        margin-left: 500px;
+        margin-right: 500px;
+        margin-bottom: 1%;
+    }
+}
+.reserva{
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    .formu{
+        margin-top: 10px;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        border: solid black;
+    }
+}
+.clases{
+    h2{
+        font-size: 3rem;
+        text-align: center;
+        color:rgb(33, 33, 182);
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    p{
+        text-align: center;
+        line-height: 1.5;
+        margin-left: 500px;
+        margin-right: 500px;
+        margin-bottom: 1%;
+    }
+}
+.tipos-de-clases {
+    display: flex;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 25px;
+    img{
+        height: 250px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .bienvenida p{
+        text-align: left;
+        font-size: 0.875rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .paletas{
+        height: 2505px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "p1 p2"
+        "p3 p4"
+        "p5 p6"
+        "p7 p8"
+        "p9 p10"
+        "p11 p12";
+    }
+    .compra{
+        .formu{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center; 
+            font-size: 0.75rem;
+            padding: 20px;
+            label{
+                margin-bottom: 5px;
+            }
+            input{
+                width: 100%; 
+                margin-bottom: 10px;
+            }
+            select{
+                width: 100%; 
+                margin-bottom: 10px; 
+            }
+            textarea{
+                width: 100%; 
+                margin-bottom: 10px; 
+            }
+        }
+    }       
+    .compra .formu input[type="submit"],
+    .compra .formu input[type="reset"] {
+        width: 100%; 
+    }
+    .nosotros p{
+        text-align: left;
+        font-size: 0.875rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.75;
+    }
+    .clases{
+        p{
+            text-align: left;
+            font-size: 0.875rem;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .tipos-de-clases{
+            li{
+                list-style-type: none;
+            }
+            p{
+                text-align: left;
+                font-size: 0.875rem;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            img{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .reserva{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            margin-left: 20px;
+            margin-right: 20px;
+        } 
+        .formu{
+            text-align: center;
+            font-size: 0.75rem;
+            width: 100%;
+            padding: 20px;
+            label{
+                display: block;
+                margin-bottom: 5px;
+            }
+            input{
+                width: 100%; 
+                margin-bottom: 10px;
+            }
+            textarea{
+                width: 100%; 
+                height: 150px;
+                margin-bottom: 10px; 
+            }
+        }
+        .formu input[type="submit"],
+        .formu input[type="reset"] {
+            width: 100%; 
+        }
+    }
+    }
+@media screen and (max-width: 420px){
+    .bienvenida p{
+        text-align: left;
+        font-size: 0.75rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .paletas {
+        height: 5000px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6" "p7" "p8" "p9" "p10" "p11" "p12";
+    }
+    .compra{
+        .formu {
+            padding: 10px;
+            label{
+                font-size: 0.625rem;
+            }
+            input{
+                font-size: 0.625rem;
+            }
+            select{
+                font-size: 0.625rem;
+            }
+            textarea{
+                font-size: 0.625rem;
+            }
+        }
+    }
+    .compra .formu input[type="submit"],
+    .compra .formu input[type="reset"] {
+        font-size: 0.625rem;
+    }
+    .nosotros p{
+        text-align: left;
+        font-size: 0.75rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 1.75rem;
+    }
+    .clases{
+        p{text-align: left;
+            font-size: 0.75rem;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .tipos-de-clases{
+            li{
+                list-style-type: none;
+            }
+            p{
+                text-align: left;
+                font-size: 0.75rem;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            img{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .reserva{
+        .formu{
+            padding: 10px;
+            label{
+                font-size: 0.625rem;
+            }
+            input{
+                font-size: 0.625rem;
+            }
+            textarea{
+                font-size: 0.625rem;
+            }
+        }
+    }
+    .reserva .formu input[type="submit"],
+    .reserva .formu input[type="reset"]{
+        font-size: 0.625rem;
+    }
+}
