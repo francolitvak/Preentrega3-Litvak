@@ -52,10 +52,6 @@ nav{
         }
     }
 }
-.banner img{
-    height: 450px;
-    max-width: 470px;
-}
 .bienvenida{
     h2{
         font-size: 3rem;
@@ -171,25 +167,10 @@ nav{
     p{
         text-align: center;
         line-height: 1.5;
-        margin-left: 500px;
-        margin-right: 500px;
-        margin-bottom: 1%;
+        margin-bottom: 20px;
     }
 }
-.reserva{
-    text-align: center;
-    line-height: 1.5;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin-left: 500px;
-    margin-right: 500px;
-    .formu{
-        margin-top: 10px;
-        padding-bottom: 15px;
-        margin-bottom: 10px;
-        border: solid black;
-    }
-}
+
 .clases{
     h2{
         font-size: 3rem;
@@ -201,9 +182,8 @@ nav{
     p{
         text-align: center;
         line-height: 1.5;
-        margin-left: 500px;
-        margin-right: 500px;
-        margin-bottom: 1%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 .tipos-de-clases {
@@ -216,6 +196,25 @@ nav{
         height: 250px;
         margin-top: 10px;
         margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    li{
+        list-style-type: none;
+    }
+}
+.reserva{
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    .formu{
+        margin-top: 20px;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        border: solid black;
+    }
+    img{
+        border-radius: 10px;
     }
 }
 @media screen and (max-width: 768px){
@@ -236,6 +235,42 @@ nav{
         "p7 p8"
         "p9 p10"
         "p11 p12";
+    }
+    .paleta1 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta2 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta3 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta4 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta5 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta6 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta7 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta8 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta9 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta10 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta11 img:hover{ 
+        transform: scale(1.2,1.2);
+    }
+    .paleta12 img:hover{ 
+        transform: scale(1.2,1.2);
     }
     .compra{
         .formu{
@@ -269,16 +304,12 @@ nav{
     .nosotros p{
         text-align: left;
         font-size: 0.875rem;
-        margin-left: 20px;
-        margin-right: 20px;
         line-height: 1.75;
     }
     .clases{
         p{
             text-align: left;
             font-size: 0.875rem;
-            margin-left: 20px;
-            margin-right: 20px;
         }
         .tipos-de-clases{
             li{
@@ -287,12 +318,6 @@ nav{
             p{
                 text-align: left;
                 font-size: 0.875rem;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-            img{
-                margin-left: 20px;
-                margin-right: 20px;
             }
         }
     }
@@ -300,14 +325,12 @@ nav{
         display: flex;
         flex-direction: column;
         align-items: center;
-        img{
-            margin-left: 20px;
-            margin-right: 20px;
-        } 
         .formu{
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
             font-size: 0.75rem;
-            width: 100%;
             padding: 20px;
             label{
                 display: block;
@@ -319,7 +342,6 @@ nav{
             }
             textarea{
                 width: 100%; 
-                height: 150px;
                 margin-bottom: 10px; 
             }
         }
@@ -371,30 +393,23 @@ nav{
         line-height: 1.75rem;
     }
     .clases{
-        p{text-align: left;
+        p{
+            text-align: left;
             font-size: 0.75rem;
-            margin-left: 10px;
-            margin-right: 10px;
         }
         .tipos-de-clases{
+            text-align: center;
             li{
                 list-style-type: none;
             }
             p{
                 text-align: left;
                 font-size: 0.75rem;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-            img{
-                margin-left: 10px;
-                margin-right: 10px;
             }
         }
     }
     .reserva{
         .formu{
-            padding: 10px;
             label{
                 font-size: 0.625rem;
             }
